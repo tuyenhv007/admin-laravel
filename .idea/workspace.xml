@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68c2f771-9cae-4dde-a750-e1d0b291562b" name="Default Changelist" comment="" />
+    <list default="true" id="68c2f771-9cae-4dde-a750-e1d0b291562b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/EloquentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/demo/chart-area-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/demo/chart-bar-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/demo/chart-pie-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/demo/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/401.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/assets/demo/chart-area-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/assets/demo/chart-bar-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/assets/demo/chart-pie-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/assets/demo/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/assets/img/error-404-monochrome.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/layout-sidenav-light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/layout-static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/template-demo/tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/core/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/core/menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/posts/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/posts/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GenderConstant.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/calculator-age.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +72,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -123,18 +179,22 @@
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1dRAqdXfDmynxleihmEfjCRHM58" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -143,6 +203,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.UserController.php">
     <configuration name="UserController.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/blog/Http/Controllers/UserController.php" useBuiltInWebServerPort="true">
@@ -170,7 +238,10 @@
       <updated>1592377724296</updated>
       <workItem from="1592377728744" duration="3090000" />
       <workItem from="1592463268562" duration="2836000" />
-      <workItem from="1592549380331" duration="3770000" />
+      <workItem from="1592549380331" duration="4015000" />
+      <workItem from="1592807581287" duration="3353000" />
+      <workItem from="1592895591388" duration="3974000" />
+      <workItem from="1592980758958" duration="5381000" />
     </task>
     <servers />
   </component>
@@ -178,10 +249,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="333" y="104" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592552690914">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="609" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592897183653">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="609" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592897183653" />
+    <state x="444" y="125" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592898515825">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="333" y="104" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1592552690914" />
+    <state x="444" y="125" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592898515825" />
     <state width="1378" height="275" key="GridCell.Tab.0.bottom" timestamp="1592390654777">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -214,18 +290,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1378" height="275" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1592390654778" />
-    <state x="387" y="211" key="NewPhpClassDialog" timestamp="1592552538489">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="516" y="253" key="NewPhpClassDialog" timestamp="1592898455642">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="387" y="211" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1592552538489" />
-    <state x="472" y="360" key="NewPhpFileDialog" timestamp="1592550005889">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="516" y="253" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592898455642" />
+    <state x="629" y="432" key="NewPhpFileDialog" timestamp="1592982933453">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1592550005889" />
-    <state x="222" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1592549380777">
+    <state x="629" y="432" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592982933453" />
+    <state x="222" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1592980759281">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="222" y="207" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1592549380777" />
+    <state x="222" y="207" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1592980759281" />
+    <state x="296" y="248" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592895591475" />
+    <state x="457" y="0" width="1005" height="1080" key="search.everywhere.popup" timestamp="1592898182379">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="457" y="0" width="1005" height="1080" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1592898182379" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,6 +317,11 @@
           <url>file://$PROJECT_DIR$/routes/web.php</url>
           <line>23</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/admin/core/footer.blade.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

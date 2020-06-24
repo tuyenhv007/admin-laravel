@@ -10,43 +10,36 @@
                 <thead>
                 <tr>
                     <th>STT</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Birthday</th>
-                    <th>Role</th>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Created</th>
+                    <th>Author</th>
                     <th></th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
                     <th>STT</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Birthday</th>
-                    <th>Role</th>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Created</th>
+                    <th>Author</th>
                     <th></th>
                 </tr>
                 </tfoot>
                 <tbody>
-                @forelse($users as $key => $user)
+                @forelse($posts as $key => $post)
                     <tr>
-                        <td>{{ ++$key }}</td>
-                        <td>{{ $user->name }}</td>
-                        <td>{{ $user->email }}</td>
-                        <td>{{ $user->birthday }}</td>
+                        <td width="50">{{ ++$key }}</td>
+                        <td><img src="{{ asset('storage/' . $post->image) }}" alt="" width="100"></td>
+                        <td>{{ $post->title }}</td>
+                        <td>{{ $post->created_at }}</td>
+                        <td>{{ $post->user->name }}</td>
                         <td>
-                            @forelse($user->roles as $role)
-                                {{ $role->name . ',' }}
-                            @empty
-
-                            @endforelse
-                        </td>
-                        <td>
-                            <a href="{{ route('users.edit', $user->id) }}">
+                            <a href="">
                                 <i class="fa fa-edit"></i>
                             </a>
-                            <a onclick="return confirm('ban chac chan muon xoa?')"
-                               href="{{ route('users.delete', ['id' => $user->id] ) }}" style="color: red">
+                            <a onclick="return confirm('ban chac chan muon xoa?')" href="" style="color: red">
                                 <i class="fa fa-trash"></i>
                             </a>
                         </td>

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Services\UserService;
+use App\Role;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -13,7 +15,7 @@ class UserController extends Controller
 
     public function __construct(UserService $userService)
     {
-       $this->userService = $userService;
+        $this->userService = $userService;
     }
 
     public function index()
@@ -24,34 +26,44 @@ class UserController extends Controller
 
     public function create()
     {
-        return view('admin.users.add');
+        $roles = Role::all();
+        return view('admin.users.add', compact('roles'));
     }
 
     public function store(Request $request)
     {
-        dd($request->all());
+        $this->userService->create($request);
+        toastr()->success('create user success!');
+        return redirect()->route('users.index');
     }
 
     public function delete($id)
     {
-
-        if (!array_key_exists($id, $this->listUser)) {
-            abort(404);
-        }
-
-        array_splice($this->listUser, $id, 1);
+        $user = $this->userService->findById($id);
+        $user->roles()->detach();
+        $this->userService->delete($user);
+        toastr()->success('delete user success!');
         return redirect()->route('users.index');
     }
 
-    public function calculatorAge(Request $request)
+    public function edit($id)
     {
-        if ($request->birthday) {
-            $data = $request->birthday;
-            $birthday = Carbon::parse($data);
-            $age = $birthday->age;
-            echo Carbon::now('America/Vancouver');
-           // echo "tuoi cua ban la=" . $age;
-        }
-        return view('admin.users.calculator-age', compact('data'));
+        $user = $this->userService->findById($id);
+        return view('admin.users.edit', compact('user'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $user = $this->userService->findById($id);
+        $this->userService->update($user, $request);
+        toastr()->success('update user success!');
+        return redirect()->route('users.index');
+    }
+
+    public function getPostsByUser($userId)
+    {
+        $user = $this->userService->findById($userId);
+        $posts = $user->posts;
+        dd($posts);
     }
 }

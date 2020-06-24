@@ -17,12 +17,12 @@ Route::get('/', function () {
     return redirect()->route('admin.dashboard');
 });
 
-Route::get('login','LoginController@showFormLogin')->name('login');
-Route::post('login','LoginController@login')->name('users.login');
+Route::get('admin/login','LoginController@showFormLogin')->name('login');
+Route::post('admin/login','LoginController@login')->name('users.login');
 
 Route::middleware(['auth', 'checkAge'])->prefix('admin')->group(function (){
     Route::get('/', function () {
-        return view('admin.master');
+        return view('admin.dashboard');
     })->name('admin.dashboard');
 
     Route::get('logout','LoginController@logout')->name('logout');
@@ -32,8 +32,16 @@ Route::middleware(['auth', 'checkAge'])->prefix('admin')->group(function (){
         Route::get('/create', 'UserController@create')->name('users.create');
         Route::post('/create', 'UserController@store')->name('users.store');
         Route::get('/{id}/delete', 'UserController@delete')->name('users.delete');
+        Route::get('/{id}/edit', 'UserController@edit')->name('users.edit');
+        Route::post('/{id}/edit', 'UserController@update')->name('users.update');
+        Route::get('/{id}/posts', 'UserController@getPostsByUser')->name('users.getPosts');
+    });
 
-        Route::get('calculator-age', 'UserController@calculatorAge')->name('users.calculator');
+    Route::prefix('posts')->group(function (){
+        Route::get('/', 'PostController@index')->name('posts.index');
+        Route::get('/create', 'PostController@create')->name('posts.create');
+        Route::post('/create', 'PostController@store')->name('posts.store');
+
     });
 
 });

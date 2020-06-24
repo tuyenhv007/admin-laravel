@@ -19,4 +19,18 @@ class UserRepository
     {
         return $this->user->all();
     }
+
+    function save($user)
+    {
+        return $user->save();
+    }
+
+    function find($id) {
+        return $this->user->findOrFail($id);
+    }
+
+    function destroy($user)
+    {
+        $user->delete();
+    }
 }

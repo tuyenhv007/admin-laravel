@@ -17,16 +17,19 @@
                         <input type="email" class="form-control" name="email">
                     </div>
                     <div class="form-group">
-                        <label>Gender</label>
-                        <select class="form-control" name="gender">
-                            <option value="1">Nam</option>
-                            <option value="2">Nữ</option>
-                        </select>
+                        <label>Birthday</label>
+                        <input type="date" value="" class="form-control" name="birthday">
                     </div>
                     <div class="form-group">
-                        <label>Address</label>
-                        <textarea class="form-control" name="address" rows="3"></textarea>
+                        <label>Role</label>
+                        @foreach($roles as $role)
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name="roles[{{$role->id}}]" value="{{$role->id}}" class="custom-control-input" id="role-{{$role->id}}">
+                                <label class="custom-control-label" for="role-{{$role->id}}">{{ $role->name }}</label>
+                            </div>
+                        @endforeach
                     </div>
+
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Create</button>
                         <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancel</a>
