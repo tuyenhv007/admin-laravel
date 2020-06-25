@@ -1,12 +1,16 @@
 @extends('admin.master')
 @section('content')
     <ol class="breadcrumb mb-4 mt-4">
+        <li class="breadcrumb-item active">
+            <a href="{{ route('admin.dashboard') }}">Home</a>
+        </li>
         <li class="breadcrumb-item active">Users</li>
     </ol>
     <div class="card-header"><i class="fas fa-table mr-1"></i></div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <a href="{{ route('users.create') }}" class="btn btn-success mb-2">Create</a>
+            <table class="table table-bordered" width="100%" cellspacing="0">
                 <thead>
                 <tr>
                     <th>STT</th>
@@ -42,6 +46,7 @@
                             @endforelse
                         </td>
                         <td>
+                            @if($user->id !== \Illuminate\Support\Facades\Auth::id())
                             <a href="{{ route('users.edit', $user->id) }}">
                                 <i class="fa fa-edit"></i>
                             </a>
@@ -49,6 +54,7 @@
                                href="{{ route('users.delete', ['id' => $user->id] ) }}" style="color: red">
                                 <i class="fa fa-trash"></i>
                             </a>
+                            @endif
                         </td>
                     </tr>
                 @empty

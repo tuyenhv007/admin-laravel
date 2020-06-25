@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateUserRequest;
 use App\Http\Services\UserService;
 use App\Role;
 use App\User;
@@ -30,7 +31,7 @@ class UserController extends Controller
         return view('admin.users.add', compact('roles'));
     }
 
-    public function store(Request $request)
+    public function store(CreateUserRequest $request)
     {
         $this->userService->create($request);
         toastr()->success('create user success!');

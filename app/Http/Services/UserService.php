@@ -25,8 +25,8 @@ class UserService
 
     function create($request)
     {
-       // DB::beginTransaction();
-        try {
+        //DB::beginTransaction();
+        //try {
             $user = new User();
             $user->name = $request->name;
             $user->email = $request->email;
@@ -37,11 +37,11 @@ class UserService
             foreach ($request->roles as $key => $role) {
                 $user->roles()->attach($key);
             }
-            DB::commit();
-        }catch (\Exception $exception) {
-           DB::rollBack();
-           return $exception->getMessage();
-        }
+//            DB::commit();
+//        }catch (\Exception $exception) {
+//           DB::rollBack();
+//           return $exception->getMessage();
+//        }
     }
 
     function findById($id)
