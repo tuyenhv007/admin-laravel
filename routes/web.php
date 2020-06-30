@@ -34,6 +34,7 @@ Route::middleware(['auth', 'checkAge'])->prefix('admin')->group(function (){
         Route::get('/{id}/delete', 'UserController@delete')->name('users.delete');
         Route::get('/{id}/edit', 'UserController@edit')->name('users.edit');
         Route::post('/{id}/edit', 'UserController@update')->name('users.update');
+        Route::get('/search', 'UserController@search')->name('users.search');
         Route::get('/{id}/posts', 'UserController@getPostsByUser')->name('users.getPosts');
     });
 

@@ -6,7 +6,7 @@
                 Create Post
             </div>
             <div class="card-body">
-                <form method="post" action="" enctype="multipart/form-data">
+                <form method="post" action="{{ route('posts.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label>Title</label>

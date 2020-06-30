@@ -1,39 +1,40 @@
 <div class="sb-sidenav-menu">
     <div class="nav">
         <div class="sb-sidenav-menu-heading">Core</div>
-        <a class="nav-link" href="index.html"
-        >
+        <a class="nav-link" href="">
             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-            Dashboard</a
-        >
+            Dashboard</a>
         <div class="sb-sidenav-menu-heading">Interface</div>
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
-           aria-expanded="false" aria-controls="collapseLayouts"
-        >
+           aria-expanded="false" aria-controls="collapseLayouts">
             <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
             Users
-            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
-            >
+            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
         </a>
         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
             <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="{{ route('users.create') }}">Add
                     user</a><a class="nav-link" href="{{ route('users.index') }}">List</a></nav>
         </div>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
+           aria-expanded="false" aria-controls="collapseLayouts">
+            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+            Posts
+            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        </a>
+        <div class="collapse" id="collapseLayouts" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+            <nav class="sb-sidenav-menu-nested nav"><a href="{{route('posts.create')}}" class="nav-link">Add post</a><a href="{{route('posts.index')}}" class="nav-link">List</a></nav>
+        </div>
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false"
-           aria-controls="collapsePages"
-        >
+           aria-controls="collapsePages">
             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
             Pages
-            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
-            >
+            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
         </a>
-        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+        <div class="collapse" id="collapsePages" aria-labelledby="headingThree" data-parent="#sidenavAccordion">
             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth"
-                   aria-expanded="false" aria-controls="pagesCollapseAuth"
-                >Authentication
-                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
-                    >
+                   aria-expanded="false" aria-controls="pagesCollapseAuth">Authentication
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
                      data-parent="#sidenavAccordionPages">
@@ -42,10 +43,8 @@
                             Password</a></nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError"
-                   aria-expanded="false" aria-controls="pagesCollapseError"
-                >Error
-                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
-                    >
+                   aria-expanded="false" aria-controls="pagesCollapseError">Error
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"
                      data-parent="#sidenavAccordionPages">
